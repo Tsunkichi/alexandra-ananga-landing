@@ -1,0 +1,14 @@
+# Imágenes originales pesadas
+DSC*.jpg
+logo.jpg
+
+# Carpetas de desarrollo
+.agents/
+node_modules/
+__pycache__/
+skills-lock.json
+process_images.py
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
