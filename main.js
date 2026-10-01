@@ -119,12 +119,12 @@
       { threshold: 0.3 }
     );
 
-    document.querySelectorAll(".cifra-card__numero[data-target]").forEach(function (el) {
+    document.querySelectorAll(".cifra-card__numero[data-target], .cifra-banda__numero[data-target]").forEach(function (el) {
       counterObserver.observe(el);
     });
   } else {
     // Show final values immediately
-    document.querySelectorAll(".cifra-card__numero[data-target]").forEach(function (el) {
+    document.querySelectorAll(".cifra-card__numero[data-target], .cifra-banda__numero[data-target]").forEach(function (el) {
       el.textContent = parseInt(el.getAttribute("data-target"), 10).toLocaleString("es-EC");
     });
   }
